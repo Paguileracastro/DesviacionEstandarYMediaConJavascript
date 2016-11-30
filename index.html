@@ -1,0 +1,40 @@
+<!--/*=============================================
+ Programa para obtener la varianza y Dessviación estandat
+ Diego Armndo Lira Rodríguez
+ 07/11/16
+ Archivo: index.html
+=============================================*/-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <title>Desarrollo Hidrocálido</title>
+  </head>
+  <body>
+    <div class="container">
+        <h3>Por Favor Seleccione un archivo:</h3>
+        <input type="file" id="oFileLoad" name="files[]" />
+        <br>
+          <table class="table table-bordered">
+            <tr>
+              <th colspan="2">Horas Trabajadas</th>
+              <th colspan="2">Horas Dedicadas</th>
+            </tr>
+            <tr>
+              <td>Desviación Estandar</td>
+              <td>Media</td>
+              <td>Desviación Estandar</td>
+              <td>Media</td>
+            </tr>
+            <tr id="trData"></tr>
+          </table>
+        <p id="plistaMediaYDesvEst"></p>
+        <p id="pEstimatedProxySize"></p>
+        <p id="pDevelopmentHours"></p>
+    </div>
+        <script src="js/math.min.js"></script>
+        <script src="js/main.js"></script>
+  </body>
+</html>
